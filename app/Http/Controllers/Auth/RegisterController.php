@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\Admin;
+use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
@@ -21,15 +21,20 @@ class RegisterController extends Controller
             ]
             );
 
-        $admin = new Admin;
-        $admin->name = $request->input('name');
-        $admin->email = $request->input('email');
-        $admin->password = Hash::make( $request->input('password'));
-        $admin->address = $request->input('address');
-        $admin->save();
+        $user = new User;
+        $user->name = $request->input('name');
+        $user->email = $request->input('email');
+        $user->password = Hash::make( $request->input('password'));
+        $user->address = $request->input('address');
+        $user->save();
 
-        Auth::login($admin);
+        Auth::login($user);
 
-        return redirect('/home');
+        return redirect('/login');
         }
+        public function show()
+    {
+        $data= User::all();
+       return view('auth.menu',['users'=>$data]);
+    }
 }

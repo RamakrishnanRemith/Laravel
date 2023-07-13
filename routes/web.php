@@ -19,4 +19,6 @@ Route::post('store',[RegisterController::class,'store']);
 Route::view('home','home');
 Route::view('login','auth.login');
 Route::post('authenticate',[LoginController::class,'authenticate']);
-Route::get('logout',[LoginController::class,'logout']);
+
+Route::view('menu','auth.menu');
+Route::get('menu',[RegisterController::class,'show']);

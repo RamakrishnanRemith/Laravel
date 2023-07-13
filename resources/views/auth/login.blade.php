@@ -12,7 +12,7 @@
 				<div style="width:500px; background:#eeeeee;">
 					<br />
 					<div style="text-align:left;vertical-align:middle;">
-						<span style="float: left"></span>　　<img src="/StudentSupport/images/dotBlue.png" width="20px" height="20px">　<font size="5">ログイン</font>
+						<span style="float: center"></span>　　<img src="/images/main_logo.png" width="20px" height="20px">　<font size="5">ログイン</font>
 					</div>
 					<br />
 					<table border="0" cellspacing="0">
