@@ -72,7 +72,7 @@
                  @foreach ($users as $item)
                     <tr>
                         <td>{{$item['id']}}</td>
-						<td><a href="views/{{$item->id}}">{{$item['student_id']}}</a></td>
+						<td><a href="view/{{$item->id}}">{{$item['student_id']}}</a></td>
                         <td>{{$item['name']}}</td>
                         
                         

@@ -20,7 +20,7 @@ class RegisterController extends Controller
 
 			while (true) {
 				$check_code = DB::table('users')
-					->where('student_id', '=', $prefix . $code)
+					->where('student_id', '=', $prefix . $code) 
 					->count();
 				if ($check_code > 0) {
 					$code = sprintf("%'.05d", $code + 1);
@@ -53,8 +53,40 @@ class RegisterController extends Controller
         return redirect('/login');
         }
         public function show()
-    {
+        {
         $data= User::all();
-       return view('auth.menu',['users'=>$data]);
+       return view('auth.menu',['users'=>$data]);{
+
+       }
+    }
+   public function views($id)
+    {
+        $data= User::where('id',$id)->get();
+       return view('auth.view',['users'=>$data]);
+    }
+    
+      public function showData($id)
+    {
+
+        $data= User::find($id);
+        return view('auth.edit',['data'=>$data]);
+    }
+    public function update(Request $req)
+    {
+
+        $data= User::find($req->id);
+        $data->name=$req->name;
+        $data->dob=$req->dob;
+        //$data->gender=$req->gender;
+        $data->email=$req->email;
+        $data->password=$req->password;
+        $data->contact=$req->contact;
+       // $data->address=$req->address;
+        //$data->zip=$req->zip;
+       // $data->image=$req->image;
+        $data->save();
+
+        return redirect('list');
+
     }
 }

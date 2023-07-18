@@ -22,3 +22,10 @@ Route::post('authenticate',[LoginController::class,'authenticate']);
 
 Route::view('menu','auth.menu');
 Route::get('menu',[RegisterController::class,'show']);
+/* Route::view('view','auth.view'); */
+Route::get('view/{id}',[RegisterController::class,'views']);
+Route::get('edit/{id}',[RegisterController::class,'showData'])->name('edit');
+Route::post('update',[RegisterController::class,'Update']);
+
+
+// Route::get('view/{id}',[RegisterController::class,'views']);

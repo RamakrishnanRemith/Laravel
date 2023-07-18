@@ -128,14 +128,11 @@ li a{
 		<div>
 			<h2><img src="C:\Dhanapaul/stu.png" class="img" width="40" height="40">Admin View</h2>
 
-            @foreach ($users as $item)
-            <a href="{{ route('edit', $item['id']) }}">Edit</a>
-
+             @foreach ($users as $item)
+           <a href="{{ route('edit', $item['id']) }}">Edit</a>
+            <label class="label1">Studentid</label><label class="label2">{{$item['student_id']}}</label><p>
 			<label class="label1">User Name</label><label class="label2">{{$item['name']}}</label><p>
-			<label class="label1">Gender</label><label class="label2">{{$item['gender']}}</label><p>
-            <!-- <label class="label1">DOB</label><label class="label2">{{$item['dob']}}</label><p> -->
 			<label class="label1">Email</label><label class="label2">{{$item['email']}}</label><p>
-			<label class="label1">Contact</label><label class="label2">{{$item['contact']}}</label><p>
         @endforeach
     </div>
 </body>
