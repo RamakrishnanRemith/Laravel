@@ -115,8 +115,36 @@ li a{
 			color: white;
 			text-decoration: none;
 		}
+#map{
+	height:300px;
+}
+
+
     </style>
-	<title></title>
+	  <script type="text/javascript"
+        src="https://maps.google.com/maps/api/js?key={{ env('GOOGLE_MAP_KEY') }}&libraries" >
+</script>
+
+	<script type="text/javascript">
+	function showMap(lat,lng) {
+		var mylatlng={
+			lat:lat,
+			lng:lng
+		};
+
+		var map = new google.maps.Map(document.getElementById("map"), {
+			zoom:10,
+			center:mylatlng,
+		});
+
+		new google.maps.Marker({
+			position:mylatlng,
+			map,
+		});
+
+
+		
+	} </script>
 </head>
 <body>
 	<h1>STUDENT MANAGEMENT SYSTEM<img src="C:\Dhanapaul\stu.png" width="50" height="50" class="heads"></h1>
@@ -129,11 +157,15 @@ li a{
 			<h2><img src="C:\Dhanapaul/stu.png" class="img" width="40" height="40">Admin View</h2>
 
              @foreach ($users as $item)
-           <a href="{{ route('edit', $item['id']) }}">Edit</a>
+           <a href="{{ route('edit', $item['id']) }}">Edit</a><br>
             <label class="label1">Studentid</label><label class="label2">{{$item['student_id']}}</label><p>
 			<label class="label1">User Name</label><label class="label2">{{$item['name']}}</label><p>
 			<label class="label1">Email</label><label class="label2">{{$item['email']}}</label><p>
+				<div id="map"></div>
+	<button onclick="showMap(8.6928599,77.7372637)">Show Map</button>
         @endforeach
     </div>
+	
+	
 </body>
 </html>
