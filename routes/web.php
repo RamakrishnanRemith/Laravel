@@ -26,6 +26,7 @@ Route::get('menu',[RegisterController::class,'show']);
 Route::get('view/{id}',[RegisterController::class,'views']);
 Route::get('edit/{id}',[RegisterController::class,'showData'])->name('edit');
 Route::post('update',[RegisterController::class,'Update']);
+Route::view('homepage1','new.homepage1');
 
 
 // Route::get('view/{id}',[RegisterController::class,'views']);
