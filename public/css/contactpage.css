@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.remith {
+    padding: 20px;
+
+    align-items: center;
+}
+
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(241, 241, 234);
+    background-size: cover;
+}
+
+.contact .content {
+    text-align: left;
+}
+
+.contact .content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact .content p {
+    font-size: 18px;
+    color: #777;
+}
+
+/* CSS for Contact Info Boxes */
+.container {
+    display: flex;
+    width: 100%;
+    justify-self: center;
+    align-items: center;
+}
+.container.contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .contactInfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.container .box h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.container .box p {
+    font-size: 16px;
+    color: #777;
+}
+
+/* CSS for Contact Form */
+.contactForm {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contactForm h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contactForm .inputBox {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #777;
+    outline: none;
+    background: transparent;
+}
+
+.contactForm .inputBox span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #777;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:valid ~ span {
+    color: #007bff;
+    transform: translateY(-20px);
+    font-size: 12px;
+}
+
+.contactForm .inputBox input[type="submit"] {
+    width: auto;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.contactForm .inputBox input[type="submit"]:hover {
+    background-color: #0056b3;
+}

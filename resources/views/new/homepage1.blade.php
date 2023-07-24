@@ -12,7 +12,7 @@
         
        <div class="head">
         <ul>
-            <li><a href="#">ABOUT</a></li>
+            <li><a href="/homaepag">ABOUT</a></li>
             <li><a href="#">LOCATIONS</a>
             <ul class="subhead">
               <li><a href="#">India</a>
@@ -29,7 +29,7 @@
             <li><a href="#">EVENTS</a>
             <li><a href="#">STORIES</a></li>
             <li><a href="#">ONLINE</a></li>
-            <li><a href="#">CONTACT_US</a></li>
+            <li><a href="/contactpage1">CONTACT_US</a></li>
         <ul>
         </div>
          <!--    <ul class="name">
@@ -102,7 +102,7 @@
       <h2 class="logo">Travel</h2>
       <div class="toggle"></div>
     </header>
-    <video src="/images/flower.mp4" muted loop autoplay></video>
+    <!-- <video src="/images/flower.mp4" muted loop autoplay></video> -->
     <div class="overlay"></div>
     <div class="text">
    <h2>Never Stop</h2>

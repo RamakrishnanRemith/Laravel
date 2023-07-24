@@ -47,10 +47,16 @@ header .logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #111;
+    background: #111111;
     transition: 0.5s;
     z-index: 2;
 }
+.remith {
+    padding: 20px;
+
+    align-items: center;
+}
+
 .showcase.active {
     right: 300px;
 }
