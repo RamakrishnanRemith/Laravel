@@ -42,8 +42,8 @@
                 </ul>
                 </li>
                 <li><a href="#">MUSIC</a></li>
+                <li><a href="/products">Product</a>
                 <li><a href="#">GALLERY</a>
-                <li><a href="#">STORIES</a></li>
                 <li><a href="#">ONLINE</a></li>
                 <li><a href="/contactpage1">CONTACT_US</a></li>
             <ul>

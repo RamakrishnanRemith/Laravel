@@ -26,7 +26,7 @@
             </ul>
             </li>
             <li><a href="#">MUSIC</a></li>
-            <li><a href="#">EVENTS</a>
+            <li><a href="/products">Product</a>
             <li><a href="/photo">Gallery</a></li>
             <li><a href="#">ONLINE</a></li>
             <li><a href="/contactpage1">CONTACT_US</a></li>

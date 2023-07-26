@@ -48,6 +48,7 @@ Route::view('logingallery','new.logingallery');
 Route::post('authenticate',[LogingalleryController::class,'authenticate']);
 Route::view('imageupload','new.imageupload');
 Route::resource('products', ProductController::class);
+Route::view('project','projectself.project');
 
 
 
