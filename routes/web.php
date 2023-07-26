@@ -1,4 +1,5 @@
 <?php
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\MailController;
 use App\Http\Controllers\LogingalleryController;
 use App\Http\Controllers\SignupController;
@@ -31,6 +32,7 @@ Route::get('edit/{id}',[RegisterController::class,'showData'])->name('edit');
 Route::post('update',[RegisterController::class,'Update']);
 
 
+
 Route::view('homepage1','new.homepage1');
 Route::view('homepag','new.homepage1');
 // Route::get('/homepag',function(){
@@ -45,6 +47,7 @@ Route::post('stores',[SignupController::class,'stores']);
 Route::view('logingallery','new.logingallery');
 Route::post('authenticate',[LogingalleryController::class,'authenticate']);
 Route::view('imageupload','new.imageupload');
+Route::resource('products', ProductController::class);
 
 
 
