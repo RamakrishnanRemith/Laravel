@@ -1,5 +1,7 @@
 <?php
 use App\Http\Controllers\MailController;
+use App\Http\Controllers\LogingalleryController;
+use App\Http\Controllers\SignupController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\LoginController;
 use Illuminate\Support\Facades\Route;
@@ -37,6 +39,14 @@ Route::view('homepag','new.homepage1');
 
 Route::view('contactpage1','new.contactpage1');
 Route::post('/send', [MailController::class,"sendContactMail"])->name('send.contact_mail');
+Route::view('photo','new.photo');
+Route::view('signingallery','new.signingallery');
+Route::post('stores',[SignupController::class,'stores']);
+Route::view('logingallery','new.logingallery');
+Route::post('authenticate',[LogingalleryController::class,'authenticate']);
+Route::view('imageupload','new.imageupload');
+
+
 
 
 
