@@ -54,17 +54,8 @@
                 <div class="header-main__user">
                     <strong class="header-main__link hidden-sm" > <a href="/logingallery">Log in</strong>
                     <strong class="header-main__link hidden-sm" ><a href="/signingallery">Sign up</strong>
-                </div><br>
-
-                <div class="header-main__bts">
-                    <a href="/pro" class="button button--rounded">
-                        Be Pro
-                    </a>
-                    <a href="/submit/" class="button button--outline--rounded">
-                        Submit Website
-                    </a>
                 </div>
-            </div><br>
+            </div>
        
         <div class="inner" data-controller="infinite-scroll">
             <ul class="grid-sites js-ajax-entries" data-infinite-scroll-target="entries">
