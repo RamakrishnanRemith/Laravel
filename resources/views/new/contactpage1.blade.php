@@ -39,7 +39,7 @@
 <body>
     <div class="head">
         <ul>
-            <li><a href="/homaepage1">ABOUT</a></li>
+            <li><a href="/homepage1">HOME</a></li>
             <li><a href="#">LOCATIONS</a>
             <ul class="subhead">
               <li><a href="#">India</a>

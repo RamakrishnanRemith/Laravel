@@ -28,7 +28,7 @@
 <div class="wrapper">
         <div class="head">
             <ul>
-                <li><a href="/homaepag">ABOUT</a></li>
+                <li><a href="/homepage1">HOME</a></li>
                 <li><a href="#">LOCATIONS</a>
                 <ul class="subhead">
                     <li><a href="#">India</a>
@@ -43,7 +43,7 @@
                 </li>
                 <li><a href="#">MUSIC</a></li>
                 <li><a href="/products">Product</a>
-                <li><a href="#">GALLERY</a>
+                <li><a href="/photo">GALLERY</a>
                 <li><a href="#">ONLINE</a></li>
                 <li><a href="/contactpage1">CONTACT_US</a></li>
             <ul>

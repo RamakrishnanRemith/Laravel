@@ -34,7 +34,7 @@ Route::post('update',[RegisterController::class,'Update']);
 
 
 Route::view('homepage1','new.homepage1');
-Route::view('homepag','new.homepage1');
+// Route::view('homepag','new.homepage1');
 // Route::get('/homepag',function(){
 // return View('new.homepage1');
 // });
