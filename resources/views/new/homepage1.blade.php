@@ -12,7 +12,7 @@
         
        <div class="head">
         <ul>
-            <li><a href="/homaepag">HOME</a></li>
+            <li><a href="/homepage1">HOME</a></li>
             <li><a href="#">LOCATIONS</a>
             <ul class="subhead">
               <li><a href="#">India</a>
