@@ -6,6 +6,7 @@ use App\Http\Controllers\SignupController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\LoginController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PhoneAuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -49,6 +50,7 @@ Route::post('authenticate',[LogingalleryController::class,'authenticate']);
 Route::view('imageupload','new.imageupload');
 Route::resource('products', ProductController::class);
 Route::view('project','projectself.project');
+Route::get('phone-auth', [PhoneAuthController::class, 'index']);
 
 
 
